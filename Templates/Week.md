@@ -1,8 +1,9 @@
-tags: [weekly-session, c50] 
-week: 1
+tags: [weekly-session, {{course_name}}]
+course: {{course_name}}
+week: {{week_number}}
 ---
 
-# Week 1
+# Week {{week_number}} – {{course_name}}
 
 ## 📚 What I’m Learning This Week
 
@@ -41,6 +42,8 @@ Include key code snippets, pseudocode, or commands you experimented with.
 
 ## ❓ Questions I Asked Myself
 
+- 
+- 
 - 
 
 ---

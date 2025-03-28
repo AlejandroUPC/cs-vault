@@ -1,6 +1,10 @@
 ---
 tags: [course]
 ---
+tags: [weekly-session, {{course_name}}]
+tags: [weekly-session, {{course_name}}]
+tags: [weekly-session, {{course_name}}]
+tags: [weekly-session, {{course_name}}]
 	
 # {{title}}
 
