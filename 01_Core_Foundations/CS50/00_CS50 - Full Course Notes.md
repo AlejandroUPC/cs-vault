@@ -1,12 +1,10 @@
 ---
-tags: [course]
+tags:
+  - course
+  - cs50
 ---
-tags: [weekly-session, {{course_name}}]
-tags: [weekly-session, {{course_name}}]
-tags: [weekly-session, {{course_name}}]
-tags: [weekly-session, {{course_name}}]
-	
-# {{title}}
+
+# CS50 
 
 **Course:** CS50: Introduction to Computer Science  
 **Source:** https://cs50.harvard.edu/x/  
@@ -15,15 +13,8 @@ tags: [weekly-session, {{course_name}}]
 **End Date:** ---
 
 ## Overview
-{{brief_description}}
 
-## Weekly Progress
-### Week 1
-- Topics:
-- Notes:
-- Questions:
+Entrypoint quite common and recommended.
 
-### Week 2
-...
 
 ## Final Thoughts

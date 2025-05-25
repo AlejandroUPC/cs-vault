@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ced89389b2f4cc4d",
+        "id": "64110adec4bdae06",
         "type": "tabs",
         "children": [
           {
-            "id": "def63b0953aff713",
+            "id": "9ae0b828d86502e6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "01_Core_Foundations/CS50/02_Week.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "02_Week"
             }
           }
         ]
@@ -161,13 +165,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "def63b0953aff713",
+  "active": "9ae0b828d86502e6",
   "lastOpenFiles": [
-    "Templates/Course Note.md",
+    "Pasted image 20250525163256.png",
+    "01_Core_Foundations/CS50/02_Week.md",
     "01_Core_Foundations/CS50/01_Week.md",
+    "01_Core_Foundations/CS50/00_Week.md",
+    "01_Core_Foundations/CS50/code/01-week/cs50.c",
+    "01_Core_Foundations/CS50/code/01-week/cs50.h",
+    "01_Core_Foundations/CS50/code/01-week/get_string.c",
+    "Pasted image 20250406164149.png",
+    "01_Core_Foundations/CS50/code/01-week/hello",
+    "01_Core_Foundations/CS50/code/01-week/hello.c",
+    "01_Core_Foundations/CS50/code/01-week",
+    "01_Core_Foundations/CS50/code",
     "01_Core_Foundations/CS50/00_CS50 - Full Course Notes.md",
-    "01_Core_Foundations/CS50/Untitled.md",
     "Templates/Week.md",
+    "Templates/Course Note.md",
+    "Pasted image 20250406135013.png",
+    "01_Core_Foundations/CS50/Untitled.md",
     "Plan.md",
     "Templates/Project Plan.md",
     "Templates/Paper Summary.md"
