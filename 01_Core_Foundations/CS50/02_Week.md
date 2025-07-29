@@ -147,7 +147,7 @@ int main(void){
     printf("%s\n", s);
 }
 ```
-- So a string uses contiguous memory positions, so its an array of chars? So we can think of s like `s[0],..,s[n]` wehre we can access by index. 
+- So a string uses contiguous memory positions, so its an array of chars? So we can think of s like `s[0],..,s[n]` where we can access by index. 
 - But... if we declare a string without its lenght as we do with arrays, how can a computer know when to start or stop writing? (starts at `H` and ends at `!`?) This is done by spending an extra byte (8 bits) set all to 0 (padding?). So if we declare s as an array of strings:
   
 | s[0] | s[1] | s[2] | s[3]     |
@@ -262,3 +262,99 @@ int main(void){
 ```
 - We also have `ctype.h` (check https://manual.cs50.io/#ctype.h)
 - When checking ASCI we see a lower case letter you can find its upper case by adding 32 (1 bit), maybe we can write a cool function?
+```c
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+
+
+int main(void){
+    string s = get_string("Input: ");
+    for (int i = 0, n = strlen(s); i<n; i ++){
+        if (isupper(s[i])){ // this can anslo be done s[i] >= 'a' and s[i] <= 'z' or even numbers directly
+            printf("%c", s[i]);
+        }
+        else{
+            printf("%c", toupper(s[i])); // can do ecven s[i] - ('a' - 'A') instead of sub s[i] - 32
+        }
+    }
+    printf("\n");
+}
+```
+- The above snippet could be even improved to remove the isupper check and let toupper cast to upper if its not upper.
+- Creaeting code w/ cli arguments by passing params to main like:
+```c
+#include <stdio.h>
+
+int main(int argc, string argv[]){}
+```
+- Some fixed values like `argv[0]` being the program name, from index `1` is the rest of args we are passing, for example if this is our snippet
+```c
+#include <cs50.h>
+#include <stdio.h>
+
+int main(int argc, string argv[]){
+    printf("Print argv[0]  as program name %s\n", argv[0]);
+    printf("Print argv[1] as first param %s\n", argv[1]);
+    printf("Print argc %i\n", argc);
+}
+```
+- The input `./greet foo` seems to return:
+```plaintext
+Print argv[0]  as program name ./greet
+Print argv[1] as first param foo
+Print argc 2
+```
+- But if we do `./greet foo aaa`:
+```plaintext
+Print argv[0]  as program name ./greet
+Print argv[1] as first param foo
+Print argc 3
+```
+- So its seems that indeed `argc` is kinda of the argument counter(argc) and argv is just the argument vector(argv), lol; should be quite easy to for loop over argc (or len argv) to print all of the stuff passed.
+- cowsay meme
+Exit status:
+- Why is main always returning an int based on its signature? `int main(void)`? Codes are overall used for errors or communicate some message (think also for HTTP).
+- In c returning 0 is all good, e.g this example to check if at least one arg is passed
+```c
+#include <cs50.h>
+#include <stdio.h>
+
+int main(int argc, string argv[]){
+    if (argc!=2){
+        printf("Missing args\n");
+        return 1;
+    }
+    printf("All gucci %s\n", argv[1]);
+    return 0;
+}
+```
+- Behaves as:
+```plaintext
+$ ./status 
+Missing args
+$ ./status foo
+All gucci foo
+```
+- We dont see the code (the return of the main) when the program runs we can do it running `echo %?` to print the output of the last command from the terminal, see w/ both examples again:
+```plaintext
+$ ./status 
+Missing args
+$ echo $?
+1
+$ ./status foo
+All gucci foo
+$ echo $?
+0
+```
+
+Encryption
+- Scrambling info in a reversible way, again like an algorithm:
+```plaintext
+plaintext + (key) -> [ cipher ] -> ciphertext
+```
+- The key allows a uniqueness to protect the encryption process.
+-  Weak key -> brute force.
+- Decryption is just the inverse process to go from ciphertext to plaintext.
