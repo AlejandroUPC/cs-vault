@@ -1,0 +1,14 @@
+- A bit map is nothing but bytes, can define up to 24 bits per pixel to define color.
+- It also contains some metadata like image size.
+- Similar to audio its also in the header(start) of the file:
+	- BITMAPFILEHEADER: 14 bytes
+	- BITMAPINFOHEADER: 40 bytes
+	- Then comes the array of bytes w/ the actual image that stores the RGB values.(8 bits x 3 per r,g,b)
+- Reminder hexadecimal digit represents 4 bits `ffffff` (6)is `111111111111111111111111` (24).
+- An image could be seen as an array of rows.
+- Image filtering is modifying just the colors.
+	- Grayscale: Converted to black and white (colors are removed) `0x00` is black and `0xff` is white, but it can have different tones of gray also, we can average the red, green and blue values each pixel has and produce a gray tone.
+	- Reflection: Move pixels around, like mirroring, so this means actually moving the structure and not just changing colors.
+	- Blur: Differnt wqys to create it, we wiil use box blur which just takes a pixel and averages the color of those pixels around it.
+	- Edges:  Specially for img processing its critical to detect the edges of things in images to create boundaries between them. This can be done applying the Sobel operator. Similar to blur, but instead of taking the average of the surronding it does the weigthed sum for the surrounding pixels. Needs to be done on edge x and y, so we end up with two averages or kernels.
+	  We can interpret those kernels 
