@@ -16,5 +16,6 @@ tags:
 
 Entrypoint quite common and recommended.
 
+Think I will be rushing weeks after 5, kinda know topics
 
 ## Final Thoughts
