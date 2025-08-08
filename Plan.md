@@ -9,12 +9,12 @@ Assuming ~15–20 hrs/week of focused time.
 
 ### ✅ Phase 1: Core Foundations (12–16 weeks)
 
-| Week | Topic                    | Resource                                                                 |
-|------|--------------------------|--------------------------------------------------------------------------|
-| 1–4  | **CS Fundamentals**      | [CS50x – Harvard](https://cs50.harvard.edu/x/)                           |
-| 5–8  | **Discrete Math**        | [MIT 6.042J + Book](https://ocw.mit.edu/courses/6-042j/)                 |
-| 9–14 | **DS & Algorithms**      | [MIT 6.006](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/) + CLRS |
-| parallel | **Optional Math**    | [Khan Academy](https://www.khanacademy.org/math/linear-algebra) – Linear Algebra & Probability |
+| Week     | Topic               | Resource                                                                                       |
+| -------- | ------------------- | ---------------------------------------------------------------------------------------------- |
+| 1–4      | **CS Fundamentals** | [CS50x – Harvard](https://cs50.harvard.edu/x/)                                                 |
+| 5–8      | **Discrete Math**   | [MIT 6.042J + Book](https://ocw.mit.edu/courses/6-042j/)                                       |
+| 9–14     | **DS & Algorithms** | [MIT 6.006](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/) + CLRS    |
+| parallel | **Optional Math**   | [Khan Academy](https://www.khanacademy.org/math/linear-algebra) – Linear Algebra & Probability |
 
 ---
 
